@@ -40,7 +40,7 @@ class App extends Component {
   }
   
   handleSave(recipe) {
-    this.setState((prevState, props) => {
+    this.setState((prevState) => {
       const newRecipe = {...recipe, id: this.state.nextRecipeId};
       return {
         nextRecipeId: prevState.nextRecipeId + 1,
